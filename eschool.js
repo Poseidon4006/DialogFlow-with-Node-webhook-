@@ -9,13 +9,13 @@ const members = [
       id: 2,
       name: 'Humming Bird',
       email: 'humming@gmail.com',
-      status: 'female'
+      gender: 'female'
     },
     {
       id: 3,
       name: 'Butterfly',
       email: 'butterfly@gmail.com',
-      status: 'female'
+      gender: 'female'
     }
   ];
 
