@@ -22,7 +22,7 @@ app.post('/webhook/', function(request, response) {
 
 
    if ( action === "totalStudent.action") {
-    const gender = dialogflowRequest.parameters.gender;
+    const gender = dialogflowRequest.queryResult.parameters.gender;
     if(gender === "both" | "total")
     return response.json({fulfillmentText:`The total strength is ${membersCount}`});
 
