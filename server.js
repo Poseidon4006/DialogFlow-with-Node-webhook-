@@ -28,8 +28,8 @@ app.post('/webhook/', function(request, response) {
         return response.json({fulfillmentText:`The total strength is ${membersCount}`});
 
     
-    else if(gender ==="male"|| gender ==="boys" || gender =="boy")
-     {  gender = "male";
+    else if(gender ==="male")
+     {  
       var count = members.filter(function( v) {
         return v.gender == gender ;
       }).length;
@@ -38,8 +38,8 @@ app.post('/webhook/', function(request, response) {
       return response.json({fulfillmentText:`The total strength of ${gender} is ${count}`});
       }
 
-      else if(gender ==="female" || gender ==="girl" || gender ==="girls"{
-        gender = "female";
+      else if(gender ==="female"){
+        
         var count = members.filter(function(v) {
           return v.gender == gender;
         }).length;
