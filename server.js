@@ -22,7 +22,21 @@ app.post('/webhook/', function(request, response) {
 
 
    if ( action === "totalStudent.action") {
+    const gender = dialogflowRequest.parameters.gender;
+    if(gender === "both" | "total")
     return response.json({fulfillmentText:`The total strength is ${membersCount}`});
+
+    else {
+      var count = members.filter(function( v) {
+        return v.gender == gender ;
+      }).length;
+      
+      console.log(count);
+
+      return response.json({fulfillmentText:`The total strength of ${gender} is ${count}`})
+    
+    } 
+        
    }
   console.log(action);
   // these 3 variables could come from your intent's parameters !

@@ -3,19 +3,19 @@ const members = [
       id: 1,
       name: 'Tomba Maisnam',
       email: 'tomba@gmail.com',
-      status: 'active'
+      gender: 'male'
     },
     {
       id: 2,
       name: 'Humming Bird',
       email: 'humming@gmail.com',
-      status: 'inactive'
+      status: 'female'
     },
     {
       id: 3,
       name: 'Butterfly',
       email: 'butterfly@gmail.com',
-      status: 'active'
+      status: 'female'
     }
   ];
 
