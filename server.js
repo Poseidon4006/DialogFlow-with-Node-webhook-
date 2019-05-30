@@ -26,8 +26,8 @@ app.post('/webhook/', function(request, response) {
     if(gender === "both" | "total")
     return response.json({fulfillmentText:`The total strength is ${membersCount}`});
 
-    else {
-       if(gender ==="male"|| gender ==="boys" || gender =="boy")
+    
+       elseif(gender ==="male"|| gender ==="boys" || gender =="boy")
        gender = "male";
       var count = members.filter(function( v) {
         return v.gender == gender ;
